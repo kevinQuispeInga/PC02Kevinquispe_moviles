@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "965932091147",
+    "project_id": "proyectomoviles-76de0",
+    "storage_bucket": "proyectomoviles-76de0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965932091147:android:45a23802b59cf90b3e440e",
+        "android_client_info": {
+          "package_name": "com.example.uesanapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATEN4VhAO831gudWFcWVdKBgsNslcAK1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965932091147:android:0f596e25d8638ac63e440e",
+        "android_client_info": {
+          "package_name": "com.soltis.mya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATEN4VhAO831gudWFcWVdKBgsNslcAK1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
