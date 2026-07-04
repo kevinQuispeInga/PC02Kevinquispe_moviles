@@ -17,7 +17,7 @@ object FirestoreManager {
                     "rate" to rate,
                     "updatedAt" to com.google.firebase.firestore.FieldValue.serverTimestamp()
                 )
-                firestore.collection("tasas").document(code).set(rateData).await()
+                firestore.collection("rates").document(code).set(rateData).await()
             }
             Result.success(Unit)
         } catch (e: Exception) {
@@ -41,7 +41,7 @@ object FirestoreManager {
                 "result" to result,
                 "timestamp" to com.google.firebase.firestore.FieldValue.serverTimestamp()
             )
-            firestore.collection("conversiones").add(conversionData).await()
+            firestore.collection("conversions").add(conversionData).await()
             Result.success(Unit)
         } catch (e: Exception) {
             Result.failure(e)
@@ -50,7 +50,7 @@ object FirestoreManager {
 
     suspend fun getUserConversions(userId: String): Result<List<ConversionRecord>> {
         return try {
-            val querySnapshot = firestore.collection("conversiones")
+            val querySnapshot = firestore.collection("conversions")
                 .whereEqualTo("userId", userId)
                 .get()
                 .await()
