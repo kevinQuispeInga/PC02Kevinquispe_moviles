@@ -42,7 +42,7 @@ fun HistoryScreen() {
         isLoading = !isRefreshing // only show primary loader if not pull-to-refresh style
         
         com.google.firebase.firestore.FirebaseFirestore.getInstance()
-            .collection("conversions")
+            .collection("conversiones")
             .whereEqualTo("userId", userId)
             .get()
             .addOnSuccessListener { querySnapshot ->
